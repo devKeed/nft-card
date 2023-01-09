@@ -46,16 +46,26 @@
 
     #amount{
       color: hsl(178, 100%, 50%);
-      display: inline;
       font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100px;
+      position: relative;
+      right: 10px;
+      top: 10px;
     }
 
     #time-left{
       color: hsl(215, 51%, 70%);
-      display: inline;
       font-size: 14px;
       position: relative;
-      left: 80px;
+      left: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100px;
+      bottom: 10px;
     }
 
     span{
@@ -96,17 +106,22 @@
           </h4>
       
           <p id="description">Our Equilibrium collection promotes balance and calm.</p>
-          <p id="amount">
+
+          <div id="amount">
             <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/>
             </svg>
-            0.041 ETH</p>
-            
-          <p id="time-left">
+             0.041 ETH
+          </div>
+
+          <div id="time-left">
             <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/>
             </svg>
-            3 days left</p>
+            3 days left
+          </div>
+
+
           <p id="creator">
             
             <span>Creation of</span> of Adebiyi Fortune</p>
