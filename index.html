@@ -78,6 +78,10 @@
       font-size: 13px;
       padding-bottom: 30px;
       padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
     }
 
     img{
@@ -85,14 +89,22 @@
       max-height: 250px;
       margin-top: 15px;
       border-radius: 10px;
+      
     }
 
     #init{
       max-width: 250px;
       text-align: left;
       margin: auto;
+      
     }
 
+    #avatar{
+      height: 40px;
+      width: 40px;
+      display: flex;
+      
+    }
   </style>
 </head>
 <body>
@@ -122,9 +134,10 @@
           </div>
 
 
-          <p id="creator">
-            
-            <span>Creation of</span> of Adebiyi Fortune</p>
+          <div id="creator">
+            <img src="images\image-avatar.png" alt="" id="avatar">
+            <span>Creation of</span> of Adebiyi Fortune
+          </div>
         </div>
     </div>
   </main>
