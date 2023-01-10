@@ -14,7 +14,9 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center;
+      margin-top: 30px;
+    }
     .attribution a { color: hsl(228, 45%, 44%); }
 
     body{
@@ -28,7 +30,7 @@
       text-align: center;
       max-width: 280px;
       border-radius: 10px;
-      margin-top: 100px;
+      margin-top: 70px;
       box-shadow: 4px 4px 20px 20px  hsl(213, 55%, 9%);
     }
     
@@ -36,6 +38,10 @@
       color: hsl(0, 0%, 100%);
       font-size: 18px;
       margin-top: 25px;
+    }
+
+    h4:hover{
+      color: aqua;
     }
 
     #description{
@@ -72,6 +78,14 @@
       color: hsl(215, 51%, 70%);
     }
 
+    #eth-svg{
+      margin-right: 3px;
+    }
+
+    #time-svg{
+      margin-left: 1px;
+    }
+
     #creator{
       color: hsl(0, 0%, 100%);
       border-top: 0.5px solid hsl(215, 51%, 70%);
@@ -81,7 +95,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
+      padding-top: 10px;
+      padding-bottom: 20px;
     }
 
     img{
@@ -89,7 +104,12 @@
       max-height: 250px;
       margin-top: 15px;
       border-radius: 10px;
-      
+     
+    }
+
+    img:hover{
+      transition: all .3s ease;
+      background-color: cyan;
     }
 
     #init{
@@ -103,8 +123,28 @@
       height: 40px;
       width: 40px;
       display: flex;
-      
+      margin-right: 70px;
+      margin-top: 10px;
+      height: 30px;
+      width: 30px;
+      border: 1px solid white;
+      border-radius: 50%;
     }
+
+    #down{
+      margin-bottom: 10px;
+    }
+
+    #creator-p{
+      position: relative;
+      right: 55px;
+    }
+
+    #creator-p:hover{
+      color: aqua;
+    }
+
+    
   </style>
 </head>
 <body>
@@ -119,24 +159,26 @@
       
           <p id="description">Our Equilibrium collection promotes balance and calm.</p>
 
-          <div id="amount">
-            <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/>
-            </svg>
-             0.041 ETH
-          </div>
-
-          <div id="time-left">
-            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/>
-            </svg>
-            3 days left
+          <div id="down">
+            <div id="amount">
+              <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg" id="eth-svg">
+                <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/>
+              </svg>
+               0.041 ETH
+            </div>
+  
+            <div id="time-left">
+              <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg" id="time-svg">
+                <path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/>
+              </svg>
+              3 days left
+            </div>
           </div>
 
 
           <div id="creator">
             <img src="images\image-avatar.png" alt="" id="avatar">
-            <span>Creation of</span> of Adebiyi Fortune
+            <p id="creator-p"><span>Creation of </span> Jules Wyvern</p>
           </div>
         </div>
     </div>
@@ -144,7 +186,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Adebiyi Fortune</a>.
   </div>
 </body>
 </html>
